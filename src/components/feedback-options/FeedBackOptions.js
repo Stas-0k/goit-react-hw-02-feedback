@@ -10,7 +10,7 @@ const FeedBackOptions = ({ options, onLeaveFeedback }) => {
 }
 
 FeedBackOptions.propTypes = {
-  options: propTypes.arrayOf(propTypes.string).isRequired,
+  options: propTypes.shape().isRequired,
   onLeaveFeedback: propTypes.func.isRequired,
 };
 
